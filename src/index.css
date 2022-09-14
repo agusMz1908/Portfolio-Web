@@ -1,3 +1,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+/*
+body {
+    background-image: url("https://i.pinimg.com/564x/71/95/14/719514935f878a61317cfb3053661eb1.jpg");
+    background-position: center; 
+    /* background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+}
+
+*/
