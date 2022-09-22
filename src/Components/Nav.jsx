@@ -5,10 +5,10 @@ const Nav = () => {
 
   const clickMenu = (e) => {
     e.preventDefault();
-    const nav = document.getElementById('navMobile');
-    const botonCerrar = document.createElement('button');
-    const botonAbrir = document.createElement('button');
+    const nav = document.querySelector('#navMobile');
     const contenedorBoton = document.querySelector('#contenedorBoton');
+    const botonCerrar = document.createElement('i');
+    const botonAbrir = document.createElement('i');
     
     if(nav.classList.contains('mobile')) {
       nav.classList.remove('mobile');
@@ -17,7 +17,7 @@ const Nav = () => {
       contenedorBoton.appendChild(botonCerrar);
 
     } else {
-      
+
       nav.classList.add('mobile');
       contenedorBoton.innerHTML = '';
       botonAbrir.innerHTML = `<i class="fa-sharp fa-solid fa-bars py-[10px] text-5xl"></i>`
@@ -26,10 +26,10 @@ const Nav = () => {
   }
 
   return (
-    <div className="flex flex-col pt-3 text-white">
+    <div className="flex flex-col text-white pt-3">
 
         <div className="md:hidden flex items-center justify-center">
-          <button id="contenedorBoton" className="hover:text-red-500" onClick={clickMenu}><i className="fa-sharp fa-solid fa-bars py-[10px] text-5xl"></i></button>
+          <button id="contenedorBoton" className="hover:text-red-500" onClick={clickMenu}><i className="fa-sharp fa-solid fa-bars text-5xl"></i></button>
         </div>
 
         <nav id="navMobile" className="flex flex-col text-xl items-center justify-around mobile md:flex md:flex-row">

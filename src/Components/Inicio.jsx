@@ -3,7 +3,7 @@ import React from 'react'
 const Inicio = () => {
   return (
     <div className=" flex flex-col">
-        <div className="flex flex-col items-center justify-center p-10 font-bold text-white">
+        <div className="flex flex-col items-center justify-center p-7 font-bold text-white">
             <img 
               src="https://via.placeholder.com/150"
               className="mb-8 rounded-full shadow-red-500/50 shadow-lg"
