@@ -3,15 +3,34 @@ import { useState } from 'react'
 
 const Nav = () => {
 
+  function cambiarImagen() {
+    const botonCerrar = document.createElement('button');
+    const contenedorBoton = document.querySelector('#contenedorBoton');
+
+    contenedorBoton.innerHTML = '';
+    botonCerrar.innerHTML = `<i class="fa-solid fa-x"></i>`
+    contenedorBoton.appendChild(botonCerrar)
+  }
+
+  
+
   const clickMenu = (e) => {
     e.preventDefault();
     const nav = document.getElementById('navMobile');
-    const botonMenu = document.getElementById('botonNavMobile');
+    const botonCerrar = document.createElement('button');
+    const botonAbrir = document.createElement('button');
+    const contenedorBoton = document.querySelector('#contenedorBoton');
     
     if(nav.classList.contains('mobile')) {
-      nav.classList.remove('mobile')
+      nav.classList.remove('mobile');
+      contenedorBoton.innerHTML = '';
+      botonCerrar.innerHTML = `<i class="fa-solid fa-x py-[10px] text-5xl"></i>`
+      contenedorBoton.appendChild(botonCerrar);
     } else {
-      nav.classList.add('mobile')
+      nav.classList.add('mobile');
+      contenedorBoton.innerHTML = '';
+      botonAbrir.innerHTML = `<i class="fa-sharp fa-solid fa-bars py-[10px] text-5xl"></i>`
+      contenedorBoton.appendChild(botonAbrir);
     }
   }
 
@@ -19,7 +38,7 @@ const Nav = () => {
     <div className="flex flex-col pt-3 text-white">
 
         <div className="md:hidden flex items-center justify-center">
-          <button className="hover:text-red-500" onClick={clickMenu}><i id="botonNavMobile" className="fa-sharp fa-solid fa-bars py-[10px] text-5xl"></i></button>
+          <button id="contenedorBoton" className="hover:text-red-500" onClick={clickMenu}><i className="fa-sharp fa-solid fa-bars py-[10px] text-5xl"></i></button>
         </div>
 
         <nav id="navMobile" className="flex flex-col text-xl items-center justify-around mobile md:flex md:flex-row">
