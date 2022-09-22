@@ -3,17 +3,6 @@ import { useState } from 'react'
 
 const Nav = () => {
 
-  function cambiarImagen() {
-    const botonCerrar = document.createElement('button');
-    const contenedorBoton = document.querySelector('#contenedorBoton');
-
-    contenedorBoton.innerHTML = '';
-    botonCerrar.innerHTML = `<i class="fa-solid fa-x"></i>`
-    contenedorBoton.appendChild(botonCerrar)
-  }
-
-  
-
   const clickMenu = (e) => {
     e.preventDefault();
     const nav = document.getElementById('navMobile');
@@ -26,7 +15,9 @@ const Nav = () => {
       contenedorBoton.innerHTML = '';
       botonCerrar.innerHTML = `<i class="fa-solid fa-x py-[10px] text-5xl"></i>`
       contenedorBoton.appendChild(botonCerrar);
+
     } else {
+      
       nav.classList.add('mobile');
       contenedorBoton.innerHTML = '';
       botonAbrir.innerHTML = `<i class="fa-sharp fa-solid fa-bars py-[10px] text-5xl"></i>`
