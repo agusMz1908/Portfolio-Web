@@ -20,6 +20,7 @@ body {
     transition: color 0.25s 0.0833333333s;
     position: relative;
   }
+
   .draw-border::before, .draw-border::after {
     border: 0 solid transparent;
     box-sizing: border-box;
@@ -31,17 +32,21 @@ body {
     bottom: 0;
     right: 0;
   }
+
   .draw-border::before {
     border-bottom-width: 2px;
     border-left-width: 2px;
   }
+
   .draw-border::after {
     border-top-width: 2px;
     border-right-width: 2px;
   }
+
   .draw-border:hover {
     color: rgb(239 68 68);
   }
+
   .draw-border:hover::before, .draw-border:hover::after {
     border-color: rgb(239 68 68);
     -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
@@ -49,10 +54,12 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .draw-border:hover::before {
     -webkit-transition-delay: 0s, 0s, 0.25s;
             transition-delay: 0s, 0s, 0.25s;
   }
+
   .draw-border:hover::after {
     -webkit-transition-delay: 0s, 0.25s, 0s;
             transition-delay: 0s, 0.25s, 0s;
@@ -71,5 +78,102 @@ body {
   .mobile {
       display: none;
   }
+
+  .darkMode {
+    background-color: #FFFF;
+  }
+
+  .darkMode p, h1 {
+    color: black;
+  }
+
+  .darkMode i {
+    color: black;
+  }
+
+  .darkMode i:hover {
+    color: red;
+  }
+
+  .darkMode hr {
+    background-color: black;
+  }
+
+  #botonDarkMode {
+    color: white;
+  }
+
+  .darkMode #botonDarkMode {
+    color: black;
+  }
+
+  .darkMode #contenedorProyectos h1 {
+    color: black;
+  }
+
+  .darkMode .draw-border {
+    box-shadow: inset 0 0 0 2px #000000;
+    color: #000000;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+
+  .darkMode .draw-border::before, .darkMode .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .darkMode .draw-border::before {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+  }
+
+  .darkMode .draw-border::after {
+    border-top-width: 2px;
+    border-right-width: 2px;
+  }
+
+  .darkMode .draw-border:hover {
+    color: rgb(239 68 68);
+  }
+
+  .darkMode .draw-border:hover::before, .darkMode .draw-border:hover::after {
+    border-color: rgb(239 68 68);
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+
+  .darkMode .draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+            transition-delay: 0s, 0s, 0.25s;
+  }
+  
+  .darkMode .draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+            transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .darkMode .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1rem 'Roboto Slab', sans-serif;
+    padding: 1rem 1rem;
+    letter-spacing: 0.05rem;
+  }
+
+
+
 
 
