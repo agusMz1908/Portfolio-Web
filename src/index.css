@@ -80,7 +80,7 @@ body {
   }
 
   .darkMode {
-    background-color: #FFFF;
+    background-color: #D5DBDB
   }
 
   .darkMode p, h1 {
@@ -105,6 +105,10 @@ body {
 
   .darkMode #botonDarkMode {
     color: black;
+  }
+
+  .darkMode .proyecto {
+    background-color: white;
   }
 
   .darkMode #contenedorProyectos h1 {

@@ -7,7 +7,7 @@ const Proyecto = () => {
         <h1 className="pb-10 font-bold text-white">PROYECTS</h1>
 
         <div className="flex flex-col items-center justify-center pb-10">
-          <div className="rounded-tl-lg rounded-br-lg border-4 border-red-500 shadow-red-500/50 shadow-xl">
+          <div className="bg-zinc-700 rounded-tl-lg rounded-br-lg border-4 border-red-500 shadow-red-500/50 shadow-xl proyecto">
             <a href="https://www.google.com/" target="_blank" className="hover:opacity-40"><img
               src={Imagen}
               className="p-2 w-[275px]"
@@ -26,7 +26,7 @@ const Proyecto = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center pb-10">
-          <div className="rounded-tl-lg rounded-br-lg border-4 border-red-500 shadow-red-500/50 shadow-xl">
+          <div className="bg-zinc-700 rounded-tl-lg rounded-br-lg border-4 border-red-500 shadow-red-500/50 shadow-xl proyecto">
             <a href="https://www.google.com/" target="_blank" className="hover:opacity-40"><img
               src={Imagen}
               className="p-2 w-[275px]"
@@ -45,7 +45,7 @@ const Proyecto = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center pb-10">
-          <div className="rounded-tl-lg rounded-br-lg border-4 border-red-500 shadow-red-500/50 shadow-xl">
+          <div className="bg-zinc-700 rounded-tl-lg rounded-br-lg border-4 border-red-500 shadow-red-500/50 shadow-xl proyecto">
             <a href="https://www.google.com/" target="_blank" className="hover:opacity-40"><img
               src={Imagen}
               className="p-2 w-[275px]"
